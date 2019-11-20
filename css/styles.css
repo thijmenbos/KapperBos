@@ -1,0 +1,187 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+nav {
+    background-color: rgb(241, 241, 241);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.logo {
+    width: 5%;
+}
+
+.logo img {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+.menu-ctn > a li {
+    display: inline-block;
+    background-color: white;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 100;
+    padding: 10px 15px;
+    transition: all 0.2s ease;
+    position: relative;
+    color: black;
+}
+
+.menu-ctn > li {
+    display: inline-block;
+    background-color: white;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 100;
+    padding: 10px 15px;
+    transition: all 0.2s ease;
+    position: relative;
+    color: black;
+}
+
+.menu-ctn li:hover {
+    cursor: pointer;
+    background-color: rgb(203, 241, 253);
+}
+
+#dropdown {
+    display: none;
+    position: absolute;
+    width: 100%; 
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
+    text-align: center;
+    left: 0;
+    top: 100%;
+}
+
+#dropdown li {
+    padding: 10px 15px;
+    color: black;
+}
+
+#dropdown.active {
+    display: block;
+}
+
+.wrapper {
+    width: 1500px;
+    margin: 0 auto;
+}
+
+.index-banner {
+    width: 100%;
+    height: calc(100vh - 18vw);
+    background-image: url('../img/Banner.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: table;
+}
+
+.vertical-center {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+.index-banner h2 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 80px;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 8px black;
+}
+
+.index-banner h1 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+    font-style: italic;
+    line-height: 40px;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 8px black;
+    
+}
+
+.index-links div {
+    margin: 20px;
+    height: 200px;
+    background-color: #f2f2f2;
+    float: left;
+}
+
+.index-boxlink-2 {
+    width: calc(33.33% - 53px) !important;
+}
+
+.index-boxlink-1 {
+    width: calc(100% - 80px) !important;
+}
+
+.index-boxlink-3 {
+    width: calc(50% - 60px) !important;
+}
+
+.index-links div h3 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 60px;
+    font-weight: 100;
+    line-height: 200px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+}
+
+.index-links div h3:hover {
+    background-color: #d0117e;
+    cursor: pointer;
+    color: white;
+}
+
+footer {
+    width: 100%;
+    padding: 40px 40px;
+    margin-top: 40px;
+    background-color: #111;
+    overflow: hidden;
+}
+
+footer ul {
+    width: fit-content;
+    float: left;
+    padding-left: 20px;
+}
+
+footer ul li {
+    display: block;
+    list-style: none;
+}
+
+footer ul li a {
+    font-family: 'Rubik', sans-serif;
+    font-size: 24px;
+    color: white;
+    line-height: 50px;
+}
+
+.footer-sm {
+    width: 60px;
+    float: right;
+}
+
+.footer-sm img {
+    width: 100%;
+    margin-bottom: 10px;
+}
